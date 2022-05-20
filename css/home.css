@@ -1,18 +1,106 @@
-*{
-    font-family: 'Oswald', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 .header{
-    position: absolute;
+    background-color: #ffffff;
     top: 0;
     left: 0;
     width: 100%;
-    margin-top: 30px
+    margin-top: 10px;
+    position: fixed;
 }
 .container{
     max-width:1250px;
     margin: 0 auto;
     width: 100%;
+}
+.header .container .header_content{
+    height: 80px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .header_content a{
+    text-decoration: none;
+}
+.header .header_content .logo{
+    position: relative;
+    color: #dc4f72;
+}
+.header .header_content .logo i{
+    position: absolute;
+    top:18px;
+    left: 0;
+    font-size: 26px;
+}
+.header .header_content .logo p{
+    margin-left: 38px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.header .header_content .navbar a{
+    padding: 0 10px;
+    color: #070120;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+.header .header_content .navbar button{
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid red;
+    font-weight: 600;
+    border-radius: 5px;
+    color:#dc4f72;
+}
+.carauser{
+    background: #ffffff;
+    background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(../imggroup_files/banner.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    padding-top: 5rem;
+}
+.carauser .row{
+    display: flex;
+}
+.carauser .col-left,
+.carauser .col-right{
+    width: 50%;
+}
+.carauser .col-left{
+    margin-top: 90px;
+}
+.carauser .col-left h1{
+    font-size: 50px;
+    line-height: 57.5px;
+    color: var(--title-color);
+    font-weight: 700;
+}
+.carauser .col-left p{
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.carauser .col-left a{
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0px;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #dc4f72;
+    border:1px solid #dc4f72 ;
+    border-radius: 5px;
+    
+}
+.carauser .col-right img{
+    transform: rotate(180deg);
+}
+.statictic .title{
+    text-align: center;
 }

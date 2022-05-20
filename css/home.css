@@ -1,14 +1,19 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .header{
     background-color: #ffffff;
     top: 0;
     left: 0;
     width: 100%;
     margin-top: 10px;
-    position: fixed;
+    /* position: fixed; */
 }
 .container{
-    max-width:1250px;
+    max-width:1200px;
     margin: 0 auto;
     width: 100%;
 }
@@ -28,7 +33,7 @@
 }
 .header .header_content .logo i{
     position: absolute;
-    top:18px;
+    top:-1px;
     left: 0;
     font-size: 26px;
 }
@@ -54,7 +59,8 @@
     color:#dc4f72;
 }
 .carauser{
-    background: #ffffff;
+    background-size: 100%;
+    /* background: #ffffff; */
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(../imggroup_files/banner.jpg);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center;
@@ -65,6 +71,7 @@
 }
 .carauser .row{
     display: flex;
+    justify-content: space-between;
 }
 .carauser .col-left,
 .carauser .col-right{
@@ -100,7 +107,141 @@
 }
 .carauser .col-right img{
     transform: rotate(180deg);
+    width: 100%;
 }
-.statictic .title{
+.service{
+    text-align: center ;
+}
+.service .container .tittle{
     text-align: center;
+}
+.service .tittle h6{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color:#dc4f72;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.service .title h1{
+    color: #070120;
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+}
+.service .main .row{
+    display: flex;
+}
+.experriene{
+    background-color: #F7F9FC;
+    background-size: 100%;
+}
+.experriene .row{
+    display: flex;
+    justify-content:space-between;
+}
+.experriene .col-left{
+    width: 50%;
+}
+.experriene .col-left h6{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #dc4f72;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 80px;
+}
+.experriene .col-left h2{
+    font-size: 35px;
+    line-height: 40px;
+    color: #070120;
+    font-weight: 700;
+}
+.experriene .col-left p{
+    color: #070120;
+    line-height: 24.4px;
+    padding: 20px 0;
+}
+.experriene .col-left a{
+    /* display: inline-block; */
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+    padding: 20px 30px;
+    text-decoration: none;
+    color:#fff;
+    background-color: #dc4f72;
+    border-radius: 5px;
+}
+.experriene .col-right{
+    width: 50%;
+}
+.experriene .col-right img{
+    width: 500px;
+    margin-top: 70px;
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    margin-left: 90px;
+}
+.contact{
+    background-color: #F7F9FC;
+}
+.contact .row{
+    display: flex;
+    padding-top: 100px;
+}
+.contact .col{
+    width: calc(100% / 3);
+    padding: 0 15px;
+}
+.contact .col .item{
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.contact .item p{
+    font-size: 16px;
+    line-height: 24.5px;
+    text-transform: capitalize;
+    color: #070120;
+    font-weight: 700;
+}
+.contact .item h4{
+    font-size: 50px;
+    line-height: 1;
+    color: #dc4f72;
+    margin-bottom: 0;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.contact .item span{
+    color:#5a5a5a;
+}
+.portfolo{
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(../imggroup_files/bg.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    padding-top: 5rem;
+    width: 100%;
+}
+.portfolo h1{
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+.portfolo p{
+    font-size: 16px;
+    color: #eee;
+    line-height: 24.5px;
+}
+.portfolo a{
+    
 }

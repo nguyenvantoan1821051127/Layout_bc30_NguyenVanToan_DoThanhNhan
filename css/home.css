@@ -110,7 +110,7 @@
     width: 100%;
 }
 .service{
-    text-align: center ;
+    margin-top: 70px;
 }
 .service .container .title{
     text-align: center;
@@ -127,9 +127,31 @@
     font-size: 46px;
     line-height: 1;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 .service .main .row{
+    padding-top: 80px;
     display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.service .main .col{
+    width: calc(100% / 3);
+    padding: 15px;
+    margin-bottom: 50px;
+}
+.service .main .item{
+    background-color:#f7f7f7;
+    padding: 50px;
+    border-radius: 5px;
+}
+.service .main .item h2{
+    padding: 12px 0;
+}
+.service .main .item p{
+    font-size: 16px;
+    line-height: 24.5px;
+    color:#5a5a5a;
 }
 .experriene{
     background-color: #F7F9FC;
@@ -229,6 +251,8 @@
     align-items: center;
     padding-top: 5rem;
     width: 100%;
+    padding-bottom: 70px;
+    margin-bottom: 50px;
 }
 .portfolo .container h1{
     color: #ffffff;
@@ -240,10 +264,18 @@
     font-size: 16px;
     color: #eee;
     line-height: 24.5px;
+    padding: 30px 0;
 }
-/* .portfolo a{
-
-} */
+.portfolo a{
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 18px 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    color:#070120
+}
 .solutions .title{
     text-align: center;
 }
@@ -285,6 +317,7 @@
 .solutions .main .item .solutions-header img{
     width: 100%;
     margin-bottom: 30px;
+    filter: grayscale(100%) contrast(100%);
 }
 .solutions .main .item .solutions-header p{
     position: absolute;

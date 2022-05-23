@@ -5,36 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href=".././css/home.css" />
     <title>Home layout</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header fixed-top" >
       <div class="container">
-        <div class="header_content">
+        <dv class="header-item">
+         <div class="header-logo">
           <a href="#" class="logo">
             <i class="fa-regular fa-handshake"></i>
-            <p>MASTERWORK</p>
+            <span> Masterwork</span>
           </a>
-          <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">
-              <select>
-                <option selected>Pages</option>
-                <option value="1">Blog post</option>
-                <option value="2">Blog single</option>
-                <option value="3">Landing page</option>
-              </select>
-            </a>
-            <a href="#">Contact</a>
-            <button class="">SCHEDILE A DEMO</button>
-          </nav>
-        </div>
+         </div>
+    
+         <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SERVICE</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PAGES
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">BLOG POSTS</a></li>
+                    <li><a class="dropdown-item" href="#">BLOG SINGLE</a></li>
+                    <li><a class="dropdown-item" href="#">LANDING PAGE</a></li>
+                  </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                  </li>
+                  <button class="btn btn-danger">SCHEDULE A DEMO</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
     <section class="carauser">
@@ -287,7 +315,87 @@
     </section>
     <section class="project"></section>
     <section class="people"></section>
-    <section class="plan"></section>
-    <footer class="footer"></footer>
+    <section class="plan">
+      <h1>Ready to build your own brand <br/>community?</h1>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus
+         <br />nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+      <div>
+        <button type="button" class="btn btn-outline-danger"><a href="#"class="book">BOOK A DEMO</a></button>
+        <button type="button" class="btn btn-danger"><a href="#" class="get">GET STARTED</a></button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="w3l-footer-16-main py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 column">
+              <div class="row">
+                <div class="col-md-4 column">
+                  <h3>Company</h3>
+                  <ul class="footer-gd-16">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4 column mt-md-0 mt-4">
+                  <h3>Useful Links</h3>
+                  <ul class="footer-gd-16">
+                    <li><a href="#url">Case Studies</a></li>
+                    <li><a href="#url">Our Branches</a></li>
+                    <li><a href="#url">Latest Media</a></li>
+                    <li><a href="about.html">About Company</a></li>
+                    <li><a href="#url">Our People</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4 column mt-md-0 mt-4">
+                  <h3>Our Services</h3>
+                  <ul class="footer-gd-16">
+                    <li><a href="#url">Privacy Policy</a></li>
+                    <li><a href="#url">Our Terms</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="landing-single.html">Landing Page</a></li>
+                    <li><a href="#url">Our People</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 column pl-lg-5 column4 mt-lg-0 mt-5">
+              <h3>Newsletter </h3>
+              <div class="end-column">
+                <h4>Get latest updates and offers.</h4>
+                <form class="form-inline">
+                  <input class="form-control " type="email" placeholder="Email Address" >
+                  <button class="btn btn-danger " type="submit">Go</button>
+                </form>
+                <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
+            <div class="columns text-lg-left text-center">
+              <p>&copy; 2020 Masterwork. All rights reserved | Designed by <a href="https://w3layouts.com/">W3Layouts</a>
+              </p>
+            </div>
+            <div class="columns-2 mt-lg-0 mt-3">
+              <ul class="social">
+                <li><a href="#facebook"><span class="fa-brands fa-facebook-f" aria-hidden="true"></span></a>
+                </li>
+                <li><a href="#linkedin"><span class="fa-solid fa-info" aria-hidden="true"></span></a>
+                </li>
+                <li><a href="#twitter"><span class="fa-solid fa-dove" aria-hidden="true"></span></a>
+                </li>
+                <li><a href="#google"><span class="fa-brands fa-google-plus-g" aria-hidden="true"></span></a>
+                </li>
+                <li><a href="#github"><span class="fa-brands fa-github" aria-hidden="true"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

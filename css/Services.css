@@ -1,0 +1,126 @@
+*{
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.fixed-top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+.header{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.3 );
+    background-color: #fff;
+    padding: 0px 40px;
+    height: 90px;
+    align-items: center;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+}
+
+.header .logo{
+    color: #dc4f72;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header .logo span{
+    position: relative;
+    top: -1px;
+}
+
+.header .navbar a{
+    color: gray;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.header .btn{
+    background-color: white;
+    border-color: #dc4f72 ;
+    color: #dc4f72;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 30px;
+    margin: 0;
+
+}
+
+.header .navbar a:hover{
+    color: #dc4f72;
+}
+
+.header .header-item{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.mini-nav{
+  padding: 15px 20px;
+  background: #f7f9fc;
+}
+
+.breadcrumb{
+    margin-top: 90px;
+    margin-bottom: 0;
+}
+
+.breadcrumb-item{
+    font-size: 14px;
+}
+
+
+.item-contact{
+    display: flex;
+}
+.carauser h1{
+    text-align: center;
+    padding: 50px 0;
+}
+.carauser .main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.carauser .row-left,
+.carauser .row-right{
+    width: 50%;
+}
+.carauser .row-left h2{
+    padding-bottom: 20px;
+}
+.carauser .row-left h4{
+    font-size: 24px;
+    line-height: 30px;
+    color: #999;
+    padding-bottom:20px ;
+}
+.carauser .row-left button{
+    margin-top: 20px;
+}
+.carauser .row-right .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.carauser .row-right .col{
+    width: calc(100% /2);
+}

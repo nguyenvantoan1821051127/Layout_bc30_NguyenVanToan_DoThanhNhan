@@ -24,7 +24,7 @@
     border-bottom: 1px solid rgba(255,255,255,0.3 );
     background-color: #fff;
     padding: 0px 40px;
-    height: 90px;
+    height: 75px;
     align-items: center;
     box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
 }
@@ -43,25 +43,42 @@
 
 .header .navbar a{
     color: gray;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 200;
     text-decoration: none;
     margin-right: 30px;
+    margin-top: 10px;
 }
-
-.header .btn{
+.header .navbar .navbar-brand{
+    color:#dc4f72;
+}
+.header .navbar .navbar-brand::after{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 0px;
+  background-color: red;
+  /* properties - duration - timing-function - delay */
+  transition: all 0.5s linear 0s;
+}
+.header .navbar .navbar-brand:hover::after{
+    width: 100%;
+}
+.header button{
     background-color: white;
     border-color: #dc4f72 ;
     color: #dc4f72;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 0 30px;
-    margin: 0;
-
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 30px;
+    margin-top: -3px;
 }
-
+.header button:hover{
+    background-color:#dc4f72;
+    transition: 0.3s;
+}
 .header .navbar a:hover{
-    color: #dc4f72;
+    color:#dc4f72;
 }
 
 .header .header-item{
@@ -110,15 +127,19 @@
 }
 .carauser .col-left a{
     line-height: 52px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
     margin: 0px;
-    padding: 20px 20px;
+    padding: 0px 20px;
     text-decoration: none;
     color: #dc4f72;
     border:1px solid #dc4f72 ;
     border-radius: 5px;
     
+}
+.carauser .col-left a:hover{
+    color:#fff;
+    background-color: #dc4f72;
 }
 .carauser .col-right img{
     transform: rotate(180deg);
@@ -154,11 +175,21 @@
     width: calc(100% / 3);
     padding: 15px;
     margin-bottom: 50px;
+    transform: translateY(0);
+    transition: 0.3s ease-in;
 }
 .service .main .item{
-    background-color:#f7f7f7;
+    background-color:#f7f9fc;
     padding: 50px;
     border-radius: 5px;
+    transform: translateY(0);
+    transition: 0.3s ease-in;
+}
+.service .main .item:hover{
+    transform: translateY(-15px);
+    transition: 0.3s ease-in;
+    background-color: #ffffff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
 }
 .service .main .item h2{
     padding: 12px 0;
@@ -202,12 +233,11 @@
 .experriene .col-left a{
     /* display: inline-block; */
     line-height: 52px;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 14px;
-    margin: 0px;
     padding: 20px 30px;
     text-decoration: none;
-    color:#fff;
+    color: #fff;
     background-color: #dc4f72;
     border-radius: 5px;
 }
@@ -220,6 +250,11 @@
     border-radius: 5px;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
     margin-left: 90px;
+    transform: translateY(0);
+    transition: all .5s;
+}
+.experriene .col-right img:hover{
+    transform: translateY(-15px);
 }
 .contact{
     background-color: #F7F9FC;
@@ -292,6 +327,9 @@
     text-decoration: none;
     color:#070120
 }
+.portfolo a:hover{
+    background-color: #eee;
+}
 .solutions .title{
     text-align: center;
 }
@@ -323,9 +361,16 @@
 }
 .solutions .main .col{
     width: calc(100% / 3);
+    padding: 0 15px;
 }
 .solutions .main .item{
-    padding: 0 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    transform: translateY(0);
+    transition: all .5s;
+}
+.solutions .main .item:hover{
+    transform: translateY(-15px);
 }
 .solutions .main .item .solutions-header{
     position: relative;
@@ -334,6 +379,10 @@
     width: 100%;
     margin-bottom: 30px;
     filter: grayscale(100%) contrast(100%);
+}
+.solutions .main .item .solutions-header img:hover{
+    filter: grayscale(0%) contrast(100%);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);;
 }
 .solutions .main .item .solutions-header p{
     position: absolute;
@@ -352,17 +401,21 @@
     padding-bottom: 15px;
 } 
 .solutions .main .solutions-body p{
-    padding: 5px 8px;
+    padding: 5px 15px;
     border-radius: 25px;
     font-size: 13px;
     font-weight: 600;
     background:#e9d4d8;
     margin-right: 270px;
     color:#dc4f72;
+    text-align: center;
 }
 .solutions .main .solutions-body h2{
     padding: 15px 0;
     font-size: 26px;
+}
+.solutions .main .solutions-body h2:hover{
+    color:#dc4f72;
 }
 .solutions .main .solutions-body .p2{
     background-color: #cce6cc;
@@ -525,4 +578,16 @@
 footer .item .icon a{
     padding-right: 30px;
     color:#070120;
+}
+
+
+@keyframes animate_home{
+    from{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(100px);
+        opacity:0.5;
+    }
 }

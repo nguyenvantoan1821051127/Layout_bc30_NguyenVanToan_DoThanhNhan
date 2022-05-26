@@ -15,8 +15,8 @@
     href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
-  <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="../slick-1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="../slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href=".././css/About.css" />
     <title>About</title>
 </head>
@@ -70,7 +70,7 @@
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                        <li class="breadcrumb-item active" aria-current="page">About</li>
                     </ol>
                 </nav>
             </div>
@@ -201,10 +201,40 @@
                 <img src="../imggroup_files/b9.jpg">
                 <a href="https://www.youtube.com/watch?v=a5KYlHNKQB8" target="_parent"><i class="fa-solid fa-play"></i></a>
             </main>
-            <button>ReQUEST A QUOTE</button>
+            <button type="button" class="btn btn-danger">ReQUEST A QUOTE</button>
         </div>
     </section>
-    <section class="team"></section>
+    <section class="team">
+        <div class="container">
+            <div class="team-row">
+                <div class="col">
+                    <div class="item">
+                        <img src="../imggroup_files/logo1.jpg">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item">
+                        <img src="../imggroup_files/logo2.jpg">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item">
+                        <img src="../imggroup_files/logo3.jpg">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item">
+                        <img src="../imggroup_files/logo4.jpg">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item">
+                        <img src="../imggroup_files/logo1.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="plan">
         <div class="container">
             <header class="title">
@@ -217,7 +247,9 @@
                 <div class="row">
                     <div class="col">
                         <div class="item">
-                            <img src="../imggroup_files/team3.jpg">       
+                            <div class="img-crile">
+                                <img src="../imggroup_files/team1.jpg">
+                            </div>   
                             <div class="icon">
                                 <h2>Gwen Johnson</h2>
                                 <p>Founder & CEO</p>
@@ -232,7 +264,9 @@
                     </div>
                     <div class="col">
                         <div class="item">                        
-                            <img src="../imggroup_files/team3.jpg">
+                            <div class="img-crile">
+                                <img src="../imggroup_files/team2.jpg">
+                            </div>
                             <div class="icon">
                                 <h2>Daniel Roberto </h2>
                                 <p>Regional Maager</p>
@@ -247,7 +281,9 @@
                     </div>
                     <div class="col">
                         <div class="item">
-                            <img src="../imggroup_files/team3.jpg">
+                            <div class="img-crile">
+                                <img src="../imggroup_files/team3.jpg">
+                            </div>
                             <div class="icon">
                                 <h2>Dhony Abraham</h2>
                                 <p>Managing Partner</p>
@@ -262,7 +298,9 @@
                     </div>
                     <div class="col">
                         <div class="item">                                                     
-                            <img src="../imggroup_files/team3.jpg">
+                            <div class="img-crile">
+                                <img src="../imggroup_files/team4.jpg">
+                            </div>
                             <div class="icon">
                                 <h2>Marko Dugonji</h2>
                                 <p>Cheif Executive</p>
@@ -277,7 +315,9 @@
                     </div>
                     <div class="col">
                         <div class="item">       
-                            <img src="../imggroup_files/team3.jpg">                                     
+                            <div class="img-crile">
+                                <img src="../imggroup_files/team5.jpg">
+                            </div>                                     
                             <div class="icon">
                                 <h2>Anthony</h2>
                                 <p>Engineering Officer</p>
@@ -292,7 +332,9 @@
                     </div>
                     <div class="col">
                         <div class="item">   
-                            <img src="../imggroup_files/team3.jpg">      
+                            <div class="img-crile">
+                                <img src="../imggroup_files/team6.jpg">
+                            </div>      
                             <div class="icon">
                                 <h2>Emma Store</h2>
                                 <p>Team Leader</p>
@@ -307,7 +349,9 @@
                     </div>
                     <div class="col">
                         <div class="item">     
-                            <img src="../imggroup_files/team3.jpg">       
+                            <div class="img-crile">
+                                <img src="../imggroup_files/team7.jpg">
+                            </div>       
                             <div class="icon">
                                 <h2>Rhoda Byrd</h2>
                                 <p>Technology Officer</p>
@@ -322,7 +366,9 @@
                     </div>
                     <div class="col">
                         <div class="item">
-                            <img src="../imggroup_files/team3.jpg">
+                            <div class="img-crile">
+                                <img src="../imggroup_files/team8.jpg">
+                            </div>
                             <div class="icon">
                                 <h2>Max Stoiber </h2>
                                 <p>Manager</p>
@@ -340,5 +386,24 @@
         </div>
     </section>
     <footer class="footer"></footer>
+
+
+    <!-- js --> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <!-- slick -->
+    <script type="text/javascript" src="../slick-1.8.1/slick/slick.min.js">
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('.team-row').slick({
+          // rtl: true
+          autoplay: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        //   arrows: false,
+        //   dots: true, 
+        });
+      });
+    </script> -->
 </body>
 </html>

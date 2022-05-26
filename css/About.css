@@ -79,7 +79,10 @@
   padding: 15px 20px;
   background: #f7f9fc;
 }
-
+.mini-nav li a{
+    text-decoration: none;
+    color:#dc4f72;
+}
 .breadcrumb{
     margin-top: 90px;
     margin-bottom: 0;
@@ -135,10 +138,16 @@
 .about_us .row-left .item img{
     width: 100%;
     border-radius: 5px;
+    transform: translateY(0);
+    transition: 0.3s ease-in;
+}
+.about_us .row-left .item img:hover{
+    transform: translateY(-15px);
 }
 .about_us .row-right{
     display: flex;
     padding-top: 70px;
+    padding-bottom: 50px;
 }
 .about_us .row-right col{
     width: calc(100% / 3);
@@ -178,6 +187,7 @@
     display: flex;
     padding-top: 80px;
     text-align: center;
+    padding-bottom: 50px;
 }
 .features .main .col{
     width: calc(100% / 4);
@@ -202,6 +212,9 @@
 .features .main .item a{
     display: none;
 }
+.solutions{
+    text-align: center;
+}
 .solutions .title{
     padding-top: 50px;
     text-align: center;
@@ -225,14 +238,53 @@
 .solutions .main{
     text-align: center;
     padding-top: 30px;
+    position: relative;
 }
 .solutions .main img{
     width: 700px;
     box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
     border-radius: 5px;
+    transform: translateY(0);
+    transition: 0.3s ease-in;
+}
+.solutions .main img:hover{
+    transform: translateY(-15px);
+}
+.solutions .main a{
+    color: #dc4f72;
+    position: absolute;
+    top: 220px;
+    left: 555px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+.solutions  button {
+    background-color: #dc4f72;
+    padding: 13px 30px;
+    margin: 40px 0; 
+}
+.team .team-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+.team .item img{
+    width: 200px;
+    filter: grayscale(100%) contrast(100%);
+}
+.team .item img:hover{
+    filter: grayscale(0%) contrast(100%);
+}
+.plan{
+    background-color:#f7f9fc;
 }
 .plan .title{
     text-align: center;
+    padding: 50px 0;
 }
 .plan .title p{
     font-size: 16px;
@@ -259,17 +311,29 @@
 }
 .plan .item {
     padding-bottom: 20px;
+    transform: translateY(0);
+    transition: 0.5s ease-in-out;
 }
-.plan .item  img{
-    width: 275px;
-    height: 250px;
-    border-radius: 5px;
+.plan .item:hover{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);;
+    transform: translateY(-15px);
+    transition: 0.3s ease-in-out;
+}
+.plan .item .img-crile{
+    width: 276px;
+    height: 258px;
+    display: inline-block;
+    overflow: hidden;
+}
+.plan .item .img-crile img{
+    width: 100%
 }
 .plan .item .icon{
     padding: 16px;
     background: #fff;
     border-radius: 0 0 6px 6px;
     border: 1px solid #eee;
+    margin-top: -5px;
 }
 .plan .item .icon h2{
     padding-top: 15px;

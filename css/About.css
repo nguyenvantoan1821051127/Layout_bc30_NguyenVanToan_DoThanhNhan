@@ -10,7 +10,6 @@
     margin: 0 auto;
     width: 100%;
 }
-
 .fixed-top{
     position: fixed;
     top: 0;
@@ -18,7 +17,6 @@
     right: 0;
     z-index: 1030;
 }
-
 .header{
     top: 0px;
     left: 0px;
@@ -26,7 +24,7 @@
     border-bottom: 1px solid rgba(255,255,255,0.3 );
     background-color: #fff;
     padding: 0px 40px;
-    height: 90px;
+    height: 75px;
     align-items: center;
     box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
 }
@@ -40,30 +38,50 @@
 
 .header .logo span{
     position: relative;
-    top: 3px;
+    top: 0px;
 }
 
 .header .navbar a{
     color: gray;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 200;
     text-decoration: none;
     margin-right: 30px;
+    margin-top: 10px;
 }
-
-.header .btn{
+.header .navbar .navbar-brand{
+    color:#dc4f72;
+}
+.header .navbar li:hover .dropdown-menu{
+    display: block;
+}
+.header .navbar .navbar-brand::after{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 0px;
+  background-color: red;
+  /* properties - duration - timing-function - delay */
+  transition: all 0.5s linear 0s;
+}
+.header .navbar .navbar-brand:hover::after{
+    width: 100%;
+}
+.header button{
     background-color: white;
     border-color: #dc4f72 ;
     color: #dc4f72;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 0 30px;
-    margin: 0;
-
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 30px;
+    margin-top: -3px;
 }
-
+.header button:hover{
+    background-color:#dc4f72;
+    transition: 0.3s;
+}
 .header .navbar a:hover{
-    color: #dc4f72;
+    color:#dc4f72;
 }
 
 .header .header-item{
@@ -363,4 +381,158 @@
     padding-left: 8px;
     font-size: 13px;
     text-decoration: none;
+}
+
+
+.blog{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.blog h1{
+    color: #070120;
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 400;
+    margin-top: 50px;
+}
+.blog p{
+    color:#5a5a5a;
+    font-size: 16px;
+    line-height: 22.5px;
+    font-weight: 400;
+    padding: 15px 0;
+}
+.blog .btn{
+    padding: 14px 30px;
+    margin-right: 15px;
+}
+.blog .btn .book{
+    color: #dc4f72;
+}
+.blog .btn .get{
+    color: #f7f7f7;
+}
+.blog .btn a{
+    text-decoration: none;
+}
+.blog .btn-outline-danger a:hover{
+    color:#fff;
+}
+.footer{
+    background-color: #f7f9fc;
+}
+.footer .row ul{
+    margin-left: -30px;
+    margin-top:25px;
+}
+.footer .row li{
+    list-style: none;
+    padding: 5px 0;
+}
+.footer .row li a{
+    text-decoration: none;
+    color: #656f7b;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+}
+.footer .row li a:hover{
+    color:#dc4f72;
+}
+.footer .end-column {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.footer .end-column form{
+    margin-right: 10px;
+    display: flex;
+    padding: 15px 0px;
+}
+.footer .end-column h4{
+    font-size: 18px;
+    line-height: 25px;
+    color: #070120;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.footer .end-column button{
+    padding: 10px 40px;
+    font-size: 20px;
+}
+.footer .columns  p{
+    line-height: 22px;
+    color: #656f7b;
+    font-size: 16px;
+}
+.footer .item{
+    display: flex;
+    justify-content: space-between;
+    margin-top:40px;
+    padding-top: 30px;
+    border-top: 1px solid #656f7b;
+}
+.footer .item .title a{
+    text-decoration: none;
+    color:#070120;
+}
+.footer .item .title a:hover{
+    color:#dc4f72;
+}
+footer .item .icon a{
+    padding-right: 30px;
+    color:#070120;
+}
+footer .item .icon a:hover{
+    color:#dc4f72;
+}
+.backtotop{
+    position: fixed;
+    right:0px;
+    bottom: 70px;
+}
+
+ .backtotop i{
+    width: 50px;
+    height: 50px;
+    background-color: #dc4f72;
+    line-height: 50px;
+    text-align: center;
+    right: 15px;
+    bottom: 15px;
+    color: #fff;
+}
+@media screen and (max-width:992px){
+    .about_us .row-left{
+        display: block;
+    }
+    .about_us .row-left .col{
+        width: 100%;
+    }
+    .about_us .row-left br{
+        display: none;
+    }
+    .about_us .row-right{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .features .main .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .features .main .col {
+        width: 100%;
+        padding: 20px;
+    }
+    .plan .main .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .plan .col{
+        width: 100%;
+    }
+    .plan .item .img-crile{
+        width: 100%;
+    }
 }

@@ -383,7 +383,7 @@
     margin-bottom: 30px;
     filter: grayscale(100%) contrast(100%);
 }
-.solutions .main .item .solutions-header img:hover{
+.solutions .main .col:hover .solutions-header img{
     filter: grayscale(0%) contrast(100%);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);;
 }
@@ -417,7 +417,7 @@
     padding: 15px 0;
     font-size: 26px;
 }
-.solutions .main .solutions-body h2:hover{
+.solutions .main .col:hover .solutions-body h2{
     color:#dc4f72;
 }
 .solutions .main .solutions-body .p2{

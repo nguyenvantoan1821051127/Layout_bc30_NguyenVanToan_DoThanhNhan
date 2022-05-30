@@ -716,3 +716,88 @@
     padding-top: 20px;
     color:#dc4f72;
 }   
+.footer{
+    background-color: #f7f9fc;
+}
+.footer .row ul{
+    margin-left: -30px;
+    margin-top:25px;
+}
+.footer .row li{
+    list-style: none;
+    padding: 5px 0;
+}
+.footer .row li a{
+    text-decoration: none;
+    color: #656f7b;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+}
+.footer .row li a:hover{
+    color:#dc4f72;
+}
+.footer .end-column {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.footer .end-column form{
+    margin-right: 10px;
+    display: flex;
+    padding: 15px 0px;
+}
+.footer .end-column h4{
+    font-size: 18px;
+    line-height: 25px;
+    color: #070120;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.footer .end-column button{
+    padding: 10px 40px;
+    font-size: 20px;
+}
+.footer .columns  p{
+    line-height: 22px;
+    color: #656f7b;
+    font-size: 16px;
+}
+.footer .item{
+    display: flex;
+    justify-content: space-between;
+    margin-top:40px;
+    padding-top: 30px;
+    border-top: 1px solid #656f7b;
+}
+.footer .item .title a{
+    text-decoration: none;
+    color:#070120;
+}
+.footer .item .title a:hover{
+    color:#dc4f72;
+}
+footer .item .icon a{
+    padding-right: 30px;
+    color:#070120;
+}
+footer .item .icon a:hover{
+    color:#dc4f72;
+}
+.backtotop{
+    position: fixed;
+    right:0px;
+    bottom: 70px;
+}
+
+ .backtotop i{
+    width: 50px;
+    height: 50px;
+    background-color: #dc4f72;
+    line-height: 50px;
+    text-align: center;
+    right: 15px;
+    bottom: 15px;
+    color: #fff;
+}

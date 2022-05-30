@@ -223,12 +223,34 @@
     background-color: #dc4f72;
     font-size: 25px;
     color:#fff;
+    transform: translateY(0);
+    transition: 0.3s ease-in;
+}
+.features .main .item h2{
+    transform: translateY(0);
+    transition: 0.3s ease-in;
+}
+.features .main .col:hover i{
+    transform: translateY(-85px)
+}
+.features .main .col:hover h2{
+    transform: translateY(-80px);
 }
 .features .main .item p{
     display: none;
+    margin-top: -82px;
 }
 .features .main .item a{
     display: none;
+    text-decoration: none;
+    color:#dc4f72;
+}
+.features .main .col:hover p{
+    display: block;
+    margin-top: -82px;
+}
+.features .main .col:hover a{
+    display: block;
 }
 .solutions{
     text-align: center;
@@ -415,7 +437,7 @@
 .blog .btn a{
     text-decoration: none;
 }
-.blog .btn-outline-danger a:hover{
+.blog .btn-outline-danger:hover a{
     color:#fff;
 }
 .footer{

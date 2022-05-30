@@ -450,6 +450,11 @@
     font-size: 10px;
     margin-top: 7px;
     margin-left: 5px;
+    transform: translateX(0);
+    transition: all 0.5s;
+}
+.solutions .main .col:hover .solutions-footer i{
+    transform: translateX(5px);
 }
 .blog {
     background-color: #f7f9fc;
@@ -625,7 +630,7 @@
 .plan .btn a{
     text-decoration: none;
 }
-.plan .btn-outline-danger a:hover{
+.plan .btn-outline-danger:hover a{
     color:#fff;
 }
 .footer{

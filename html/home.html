@@ -21,48 +21,69 @@
     <title>Home layout</title>
   </head>
   <body>
-    <header class="header fixed-top" >
+    <header class="header fixed-top">
       <div class="container">
-        <div class="header-item">
-          <div class="header-logo">
-            <a href="./home.html" class="logo">
-              <i class="fa-regular fa-handshake"></i>
-              <span> Masterwork</span>
-            </a>
-          </div>
-        <nav class="navbar navbar-expand-lg ">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="./home.html">HOME</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./About.html">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./Services.html">SERVICE</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  PAGES
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="./Pages/Blog_post.html">BLOG POSTS</a></li>
-                    <li><a class="dropdown-item" href="./Pages/Blog_single.html">BLOG SINGLE</a></li>
-                    <li><a class="dropdown-item" href="./Pages/Landing_page.html">LANDING PAGE</a></li>
-                  </ul>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./Contact.html">CONTACT</a>
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="./home.html">
+            <i class="fa fa-regular fa-handshake"></i>
+            Masterwork
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Services.html">Services</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                  <span class="fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="./Pages/Blog_post.html"
+                      >Blog posts</a
+                    >
                   </li>
-                  <button class="btn btn-danger">SCHEDULE A DEMO</button>
-                </li>
-              </ul>
-            </div>
+                  <li><a class="dropdown-item" href="./Pages/Blog_single.html">Blog single</a></li>
+                  <li><a class="dropdown-item" href="./Pages/Landing_page.html">Landing page</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Contact.html">Contact</a>
+              </li>
+            </ul>
+            <a class="nav-btn"
+              ><button type="button" class="btn btn-outline-danger theme-btn">
+                schedule a demo
+              </button></a
+            >
           </div>
         </nav>
-    </div>
+      </div>
     </header>
     <section class="carauser">
       <div class="container">

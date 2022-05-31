@@ -1,378 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap"
-  rel="stylesheet"
-/>
-<link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
-<link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
-  <link rel="stylesheet" href=".././css/Services.css" />
-  <title>About</title>
-  <title>Servicer</title>
-</head>
-<body>
-  <header class="header fixed-top" >
-    <div class="container">
-      <div class="header-item">
-        <div class="header-logo">
-          <a href="./home.html" class="logo">
-            <i class="fa-regular fa-handshake"></i>
-            <span> Masterwork</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href=".././css/Services.css" />
+    <title>About</title>
+    <title>Servicer</title>
+  </head>
+  <body>
+    <header class="header fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="./home.html">
+            <i class="fa fa-regular fa-handshake"></i>
+            Masterwork
           </a>
-        </div>
-      <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./home.html">HOME</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./About.html">ABOUT</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./home.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./Services.html">SERVICE</a>
+                <a class="nav-link" href="./About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Services.html">Services</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                PAGES
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                  <span class="fa fa-angle-down"></span>
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="./Pages/Blog_post.html">BLOG POSTS</a></li>
-                  <li><a class="dropdown-item" href="./Pages/Blog_single.html">BLOG SINGLE</a></li>
-                  <li><a class="dropdown-item" href="./Pages/Landing_page.html">LANDING PAGE</a></li>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="./Pages/Blog_post.html"
+                      >Blog posts</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./Pages/Blog_single.html"
+                      >Blog single</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./Pages/Landing_page.html"
+                      >Landing page</a
+                    >
+                  </li>
                 </ul>
-                <li class="nav-item">
-                  <a class="nav-link" href="./Contact.html">CONTACT</a>
-                </li>
-                <button class="btn btn-danger">SCHEDULE A DEMO</button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Contact.html">Contact</a>
               </li>
             </ul>
+            <a class="nav-btn"
+              ><button type="button" class="btn btn-outline-danger theme-btn">
+                schedule a demo
+              </button></a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="mini-nav">
+      <div class="container">
+        <div class="breadcrumb-item">
+          <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="./home.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Servicer
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section class="carauser">
+      <div class="container">
+        <h1>Our Best Services</h1>
+        <div class="main">
+          <div class="row-left">
+            <h2>Our Best Services</h2>
+            <h4>
+              Fusce fringilla tincidunt laoreet volutpat cras varius <br />
+              sit. metus vitae diam mauris.
+            </h4>
+            <p>
+              Sed in metus libero. Sed volutpat eget dui ut tempus. Fusce
+              fringilla tincidunt<br />
+              laoreet Morbi ac metus vitae diam scelerisque malesuada eget eu
+              mauris. Cras<br />
+              varius lorem ac velit pharetra, non scelerisque mi vulputate.
+              Phasellus<br />
+              bibendum.
+            </p>
+            <button type="button" class="btn btn-danger">LEARN MORE</button>
+          </div>
+          <div class="row-right">
+            <div class="row">
+              <div class="col">
+                <div class="item">
+                  <div class="info">
+                    <img src="../imggroup_files/service-icon1.png" />
+                  </div>
+                  <div class="icon">
+                    <h5>Concept & Strategy</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet<br />
+                      consectetur elit. Inventore, eius!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="item">
+                  <div class="info">
+                    <img src="../imggroup_files/service-icon2.png" />
+                  </div>
+                  <div class="icon">
+                    <h5>Concept & Strategy</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet<br />
+                      consectetur elit. Inventore, eius!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="item">
+                  <div class="info">
+                    <img src="../imggroup_files/service-icon3.png" />
+                  </div>
+                  <div class="icon">
+                    <h5>Concept & Strategy</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet<br />
+                      consectetur elit. Inventore, eius!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="item">
+                  <div class="info">
+                    <img src="../imggroup_files/service-icon4.png" />
+                  </div>
+                  <div class="icon">
+                    <h5>Concept & Strategy</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet<br />
+                      consectetur elit. Inventore, eius!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-  </div>
-  </header>
-  <section class="mini-nav">
-    <div class="container">
-        <div class="breadcrumb-item">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="./home.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-  </section>
-  <section class="carauser">
-    <div class="container">
-      <h1>Our Best Services</h1>
-      <div class="main">
-        <div class="row-left">
-          <h2>Our Best Services</h2>
-          <h4>Fusce fringilla tincidunt laoreet volutpat cras varius <br />
-            sit. metus vitae diam mauris.</h4>
-          <p>Sed in metus libero. Sed volutpat eget dui ut tempus. Fusce fringilla tincidunt<br />
-             laoreet Morbi ac metus vitae diam scelerisque malesuada eget eu mauris. Cras<br />
-             varius lorem ac velit pharetra, non scelerisque mi vulputate. Phasellus<br /> bibendum.
-          </p>
-          <button type="button" class="btn btn-danger">LEARN MORE</button>
-        </div>
-        <div class="row-right">
+      </div>
+    </section>
+    <section class="products">
+      <div class="container">
+        <header class="title">
+          <p>THE BEST PRODUCTS</p>
+          <h1>How we make your strategy <br />business</h1>
+          <span
+            >Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus<br />
+            nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis
+            quam.</span
+          >
+        </header>
+        <main class="main">
+          <div class="row">
+            <div class="col col-1">
+              <div class="item">
+                <div class="info">
+                  <span>1</span>
+                </div>
+                <div class="icon">
+                  <h5>FULL SECURITY</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet,Ea sed illum <br />
+                    facere aperiam sequi optio consectetur<br />
+                    adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="info">
+                  <span>2</span>
+                </div>
+                <div class="icon">
+                  <h5>BEST PERFORMANCE</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet,Ea sed illum <br />
+                    facere aperiam sequi optio consectetur<br />
+                    adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="info">
+                  <span>3</span>
+                </div>
+                <div class="icon">
+                  <h5>CONCEPT & STRATEGY</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet,Ea sed illum <br />
+                    facere aperiam sequi optio consectetur<br />
+                    adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-2">
+              <div class="item">
+                <img src="../imggroup_files/service-circle.jpg" />
+              </div>
+            </div>
+            <div class="col col-3">
+              <div class="item">
+                <div class="info">
+                  <span>4</span>
+                </div>
+                <div class="icon">
+                  <h5>WORLDWIDE ACCESS</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet,Ea sed illum <br />
+                    facere aperiam sequi optio consectetur<br />
+                    adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="info">
+                  <span>5</span>
+                </div>
+                <div class="icon">
+                  <h5>INTERACTIVE BUSINESS</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet,Ea sed illum <br />
+                    facere aperiam sequi optio consectetur<br />
+                    adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="info">
+                  <span>6</span>
+                </div>
+                <div class="icon">
+                  <h5>EMAILING</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet,Ea sed illum <br />
+                    facere aperiam sequi optio consectetur<br />
+                    adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+    <section class="solutions">
+      <div class="container">
+        <header class="title">
+          <p>FEATURES SERVICES</p>
+          <h1>Some More Features</h1>
+          <span
+            >Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus<br />
+            nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis
+            quam.</span
+          >
+        </header>
+        <main class="main">
           <div class="row">
             <div class="col">
               <div class="item">
                 <div class="info">
-                  <img src="../imggroup_files/service-icon1.png">
+                  <h2>Connect people and ideas</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet adipisicing elit. Consequuntur
+                    odio<br />
+                    voluptatem tenetur consequatur adipisicing elit.
+                  </p>
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-check"></i>
+                      <span>Website Designing and Development</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check"></i>
+                      <span>Android and iOs Apps Development</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check"></i>
+                      <span
+                        >Successfully Providing Business Solution from 20
+                        years</span
+                      >
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check"></i>
+                      <span>Excellence Records</span>
+                    </li>
+                  </ul>
+                  <button type="button" class="btn btn-danger">
+                    KNOW MORE
+                  </button>
                 </div>
                 <div class="icon">
-                  <h5>Concept & Strategy</h5>
-                  <p>Lorem ipsum dolor sit amet<br /> consectetur elit. Inventore, eius!</p>
+                  <img src="../imggroup_files/b1.jpg" />
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="item">
-                <div class="info">
-                  <img src="../imggroup_files/service-icon2.png">
-                </div>
                 <div class="icon">
-                  <h5>Concept & Strategy</h5>
-                  <p>Lorem ipsum dolor sit amet<br /> consectetur elit. Inventore, eius!</p>
+                  <img src="../imggroup_files/b2.jpg" />
+                </div>
+                <div class="control">
+                  <h2>Work better together</h2>
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                    Consequuntur hic odio voluptatem tenetur consequatur.Lorem
+                    ipsum<br />
+                    dolor sit amet consectetur adipisicing elit. Consequuntur
+                    hic odio<br />
+                    voluptatem tenetur consequatur adipisicing elit.
+                  </span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                    Consequuntur hic odio voluptatem tenetur consequatur.Lorem
+                    ipsum<br />
+                    dolor sit amet consectetur adipisicing elit. Consequuntur
+                    hic odio<br />
+                    voluptatem tenetur consequatur adipisicing elit.
+                  </p>
+                  <button type="button" class="btn btn-danger">
+                    KNOW MORE
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="item">
-                <div class="info">
-                  <img src="../imggroup_files/service-icon3.png">
+          </div>
+        </main>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="w3l-footer-16-main py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 column">
+              <div class="row">
+                <div class="col-md-4 column">
+                  <h3>Company</h3>
+                  <ul class="footer-gd-16">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
                 </div>
-                <div class="icon">
-                  <h5>Concept & Strategy</h5>
-                  <p>Lorem ipsum dolor sit amet<br /> consectetur elit. Inventore, eius!</p>
+                <div class="col-md-4 column mt-md-0 mt-4">
+                  <h3>Useful Links</h3>
+                  <ul class="footer-gd-16">
+                    <li><a href="#url">Case Studies</a></li>
+                    <li><a href="#url">Our Branches</a></li>
+                    <li><a href="#url">Latest Media</a></li>
+                    <li><a href="about.html">About Company</a></li>
+                    <li><a href="#url">Our People</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4 column mt-md-0 mt-4">
+                  <h3>Our Services</h3>
+                  <ul class="footer-gd-16">
+                    <li><a href="#url">Privacy Policy</a></li>
+                    <li><a href="#url">Our Terms</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="landing-single.html">Landing Page</a></li>
+                    <li><a href="#url">Our People</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="item">
-                <div class="info">
-                  <img src="../imggroup_files/service-icon4.png">
-                </div>
-                <div class="icon">
-                  <h5>Concept & Strategy</h5>
-                  <p>Lorem ipsum dolor sit amet<br /> consectetur elit. Inventore, eius!</p>
-                </div>
+            <div class="col-lg-6 col-md-12 column pl-lg-5 column4 mt-lg-0 mt-5">
+              <h3>Newsletter</h3>
+              <div class="end-column">
+                <h4>Get latest updates and offers.</h4>
+                <form class="form-inline">
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="Email Address"
+                  />
+                  <button class="btn btn-danger" type="submit">Go</button>
+                </form>
+                <p>
+                  Sign up for our latest news & articles. We won’t give you spam
+                  mails.
+                </p>
               </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="title">
+              <p>
+                &copy; 2020 Masterwork. All rights reserved | Designed by
+                <a href="https://w3layouts.com/">W3Layouts</a>
+              </p>
+            </div>
+            <div class="icon">
+              <a href="#facebook"
+                ><span class="fa-brands fa-facebook-f" aria-hidden="true"></span
+              ></a>
+
+              <a href="#linkedin"
+                ><span class="fa-solid fa-info" aria-hidden="true"></span
+              ></a>
+
+              <a href="#twitter"
+                ><span class="fa-solid fa-dove" aria-hidden="true"></span
+              ></a>
+
+              <a href="#google"
+                ><span
+                  class="fa-brands fa-google-plus-g"
+                  aria-hidden="true"
+                ></span
+              ></a>
+
+              <a href="#github"
+                ><span class="fa-brands fa-github" aria-hidden="true"></span
+              ></a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="products">
-    <div class="container">
-      <header class="title">
-        <p>THE BEST PRODUCTS</p>
-        <h1>How we make your strategy <br />business</h1>
-        <span>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus<br />
-          nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</span>
-      </header>
-      <main class="main">
-        <div class="row">
-          <div class="col col-1">
-            <div class="item">
-              <div class="info">
-                <span>1</span>
-              </div>
-              <div class="icon">
-                <h5>FULL SECURITY</h5>
-                <p>Lorem ipsum dolor sit amet,Ea sed illum <br>
-                facere aperiam sequi optio consectetur<br/>
-                adipisicing elit.</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="info">
-                <span>2</span>
-              </div>
-              <div class="icon">
-                <h5>BEST PERFORMANCE</h5>
-                <p>Lorem ipsum dolor sit amet,Ea sed illum <br>
-                facere aperiam sequi optio consectetur<br/>
-                adipisicing elit.</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="info">
-                <span>3</span>
-              </div>
-              <div class="icon">
-                <h5>CONCEPT & STRATEGY</h5>
-                <p>Lorem ipsum dolor sit amet,Ea sed illum <br>
-                facere aperiam sequi optio consectetur<br/>
-                adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col col-2">
-            <div class="item">
-              <img src="../imggroup_files/service-circle.jpg">
-            </div>
-          </div>
-          <div class="col col-3">
-            <div class="item">
-              <div class="info">
-                <span>4</span>
-              </div>
-              <div class="icon">
-                <h5>WORLDWIDE ACCESS</h5>
-                <p>Lorem ipsum dolor sit amet,Ea sed illum <br>
-                facere aperiam sequi optio consectetur<br/>
-                adipisicing elit.</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="info">
-                <span>5</span>
-              </div>
-              <div class="icon">
-                <h5>INTERACTIVE BUSINESS</h5>
-                <p>Lorem ipsum dolor sit amet,Ea sed illum <br>
-                facere aperiam sequi optio consectetur<br/>
-                adipisicing elit.</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="info">
-                <span>6</span>
-              </div>
-              <div class="icon">
-                <h5>EMAILING</h5>
-                <p>Lorem ipsum dolor sit amet,Ea sed illum <br>
-                facere aperiam sequi optio consectetur<br/>
-                adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-    </div>
-  </section>
-  <section class="solutions">
-    <div class="container">
-      <header class="title">
-        <p>FEATURES SERVICES</p>
-        <h1>Some More Features</h1>
-        <span>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus<br />
-          nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</span>
-      </header>
-      <main class="main">
-        <div class="row">
-          <div class="col">
-            <div class="item">
-              <div class="info">
-                <h2>Connect people and ideas</h2>
-                <p>
-                  Lorem ipsum dolor sit amet adipisicing elit. Consequuntur odio<br />
-                  voluptatem tenetur consequatur adipisicing elit.
-                </p>
-                <ul>
-                  <li>
-                    <i class="fa-solid fa-check"></i>
-                    <span>Website Designing and Development</span>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-check"></i>
-                    <span>Android and iOs Apps Development</span>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-check"></i>
-                    <span>Successfully Providing Business Solution from 20 years</span>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-check"></i>
-                    <span>Excellence Records</span>
-                  </li>
-                </ul>
-                <button type="button" class="btn btn-danger">KNOW MORE</button>
-              </div>
-              <div class="icon">
-                <img src="../imggroup_files/b1.jpg">
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="item">
-              <div class="icon">
-                <img src="../imggroup_files/b2.jpg">
-              </div>
-              <div class="control">
-                <h2>Work better together</h2>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>
-                  Consequuntur hic odio voluptatem tenetur consequatur.Lorem ipsum<br />
-                  dolor sit amet consectetur adipisicing elit. Consequuntur hic odio<br />
-                  voluptatem tenetur consequatur adipisicing elit.
-                </span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-                  Consequuntur hic odio voluptatem tenetur consequatur.Lorem ipsum<br />
-                  dolor sit amet consectetur adipisicing elit. Consequuntur hic odio<br />
-                  voluptatem tenetur consequatur adipisicing elit.
-                </p>
-                <button type="button" class="btn btn-danger">KNOW MORE</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="w3l-footer-16-main py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 column">
-            <div class="row">
-              <div class="col-md-4 column">
-                <h3>Company</h3>
-                <ul class="footer-gd-16">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="col-md-4 column mt-md-0 mt-4">
-                <h3>Useful Links</h3>
-                <ul class="footer-gd-16">
-                  <li><a href="#url">Case Studies</a></li>
-                  <li><a href="#url">Our Branches</a></li>
-                  <li><a href="#url">Latest Media</a></li>
-                  <li><a href="about.html">About Company</a></li>
-                  <li><a href="#url">Our People</a></li>
-                </ul>
-              </div>
-              <div class="col-md-4 column mt-md-0 mt-4">
-                <h3>Our Services</h3>
-                <ul class="footer-gd-16">
-                  <li><a href="#url">Privacy Policy</a></li>
-                  <li><a href="#url">Our Terms</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="landing-single.html">Landing Page</a></li>
-                  <li><a href="#url">Our People</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12 column pl-lg-5 column4 mt-lg-0 mt-5">
-            <h3>Newsletter </h3>
-            <div class="end-column">
-              <h4>Get latest updates and offers.</h4>
-              <form class="form-inline">
-                <input class="form-control " type="email" placeholder="Email Address" >
-                <button class="btn btn-danger " type="submit">Go</button>
-              </form>
-              <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="title">
-            <p>&copy; 2020 Masterwork. All rights reserved | Designed by <a href="https://w3layouts.com/">W3Layouts</a>
-            </p>
-          </div>
-          <div class="icon">
-              <a href="#facebook"><span class="fa-brands fa-facebook-f" aria-hidden="true"></span></a>
-              
-              <a href="#linkedin"><span class="fa-solid fa-info" aria-hidden="true"></span></a>
-              
-              <a href="#twitter"><span class="fa-solid fa-dove" aria-hidden="true"></span></a>
-              
-              <a href="#google"><span class="fa-brands fa-google-plus-g" aria-hidden="true"></span></a>
-              
-              <a href="#github"><span class="fa-brands fa-github" aria-hidden="true"></span></a>     
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- back to top -->
-  <a href="#" class="backtotop ">
-    <i class="fa-solid fa-angle-up"></i>
-  </a>
-</body>
+    </footer>
+    <!-- back to top -->
+    <a href="#" class="backtotop">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+  </body>
 </html>

@@ -721,6 +721,78 @@
 .people .main .col .message h5{
     padding-top: 20px;
     color:#dc4f72;
+}
+.getin{
+    padding: 80px 0;
+    width: 100%;
+    /* height: 700px; */
+}
+
+.getin .title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.getin .main .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.getin .main .container{
+    display: flex;
+    justify-content: space-between;
+}
+.getin .main .item {
+    background-color: white;
+    margin: 25px  ;
+    text-align: center;
+    border-radius: 8px;
+    width: calc(100% /3);
+    box-shadow: 0 0 60px rgba(128, 128, 128, 0.273);
+    transform: translateY(0);
+    transition: all 0.5s;
+}
+.getin .main .item:hover{
+    transform: translateY(-15px);
+}
+.getin .main .item span{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color:#fbedf1;
+    color:#dc4f76;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.getin .main .item .info {
+    padding: 20px 40px;
+}
+.getin .main .item .info h2 {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.getin .main .row .col .item {
+    background-color: white;
+}
+.getin .item .info a{
+    text-decoration: none;
+    color: #070120;
+}
+.getin .item:hover .info a{
+    color: #dc4f76;
+}
+.getin .row div{
+    width: 30%;
+    height: 10px;
+    text-align: center;  
+}
+.map iframe{
+    width: 100%;
+    height: 400px;
+    display: block;
 }   
 .footer{
     background-color: #f7f9fc;

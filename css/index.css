@@ -560,6 +560,54 @@
     margin-right: 20px;
     font-size: 20px;
 }
+.project .title{
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.project .title p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color:#dc4f72;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.project .title h1{
+    color: #070120;
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.project .main .info{
+    display:flex;
+    justify-content: space-around;
+    border-bottom: 3px solid #070120;
+}
+.project .main .row{
+    display: flex;
+}
+.project .main .col{
+    width: calc(100% /2);
+    margin: 30px 40px;
+}
+.project .main .item h3{
+    font-size: 40px;
+}
+.project .main .item button{
+    padding: 15px 30px;
+    margin-top: 25px;
+}
+.project .main .col .item img{
+    width: 100%;
+    border-radius: 5px;
+    transform: translateY(0);
+    transition: 0.3s ease-in;
+}
+.project .main .col .item img:hover{
+    transform: translateY(-15px);
+}
 .people{
     background-size: cover;
     background-image: linear-gradient(to right, rgba(247, 249, 252, 0.77), rgba(247, 249, 252, 0.77)), url(../imggroup_files/b2.jpg);
